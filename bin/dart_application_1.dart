@@ -1,5 +1,7 @@
-import 'package:dart_application_1/dart_application_1.dart';
-
 void main() {
-  print('Hello world: ${calculate()}');
+  String address = "Karbogha sharif mazreen";
+
+  List data = address.replaceAll(' ', '').split('');
+
+  print(data.length);
 }
