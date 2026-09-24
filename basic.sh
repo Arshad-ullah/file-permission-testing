@@ -1,5 +1,11 @@
-#!/bin/bash
+#!/opt/homebrew/bin/bash
 
-name=$(pwd)
+# ps
+# name=$(pwd)
 
-echo "directory name..$name"
+# echo "directory name..$name"
+
+name="Hello today is ";
+
+
+echo "$(date)"
