@@ -23,4 +23,7 @@
 
 name=$1
 
-echo "My name is $name"
+
+echo "My name is $name and my father name is $2 ... $@"
+
+
