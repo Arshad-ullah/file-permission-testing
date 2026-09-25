@@ -7,3 +7,10 @@
 1: read method is use to take input from user  
 
 read -p "message" (variable) to store init
+
+# arrays
+- like other programming in bash also have array. but the main difference is that 
+- in this use curly bracis and also item divid by space not comma
+
+- array=("jahn" "kaleem")
+- to print one index "${array[0]}" if all then "${array[@]}", if length "${#array[@]}"
