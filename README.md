@@ -19,3 +19,9 @@ read -p "message" (variable) to store init
 2. "${array[@]:start:length}"
 
 # conditional statement
+
+1. String conditions
+    a: =
+    b: !=
+    c: -z empty
+    d: -n non empty

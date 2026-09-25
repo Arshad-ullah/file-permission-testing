@@ -2,10 +2,10 @@
 
 name="arshad"
 
-if [ $name = "arshad" ]; then
-    echo "Yes this is Arshad"
+if [ -n $name ]; then
+    echo "Yes, name is not empty"
 
 else    
-    echo "No, this is not Arshad"
+    echo "Yes, name is empty"
 
 fi
