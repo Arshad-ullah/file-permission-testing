@@ -7,11 +7,20 @@
 
 
 # variables 
-name="Hello today is ";
+# name="Hello today is ";
 
-files="my file.txt"
+# files="my file.txt"
 
-touch "$files"
+# touch "$files"
 
 
-echo "$(date)"
+# echo "$(date)"
+
+
+# greeting="Hello"
+
+# echo "${greeting}s worlds"
+
+name=$1
+
+echo "My name is $name"
