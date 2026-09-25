@@ -52,18 +52,23 @@
 
 # fi
 
-read -p "Enter number " number
+# read -p "Enter number " number
 
 
-if [ $((number)) -gt 0 ]; then
-     echo "Yes, this positive number"
+# if [ $((number)) -gt 0 ]; then
+#      echo "Yes, this positive number"
 
     
-elif [ $((number)) -lt 0 ]; then
-    echo "Yes, this is negative number"
+# elif [ $((number)) -lt 0 ]; then
+#     echo "Yes, this is negative number"
 
-else 
-    echo "Zero"
+# else 
+#     echo "Zero"
 
 
-fi
+# fi
+
+
+value=$((20%2))
+
+echo "$((21%2))"
