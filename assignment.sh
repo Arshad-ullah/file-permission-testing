@@ -55,6 +55,15 @@
 read -p "Enter number " number
 
 
-value=$((number+32))
+if [ $((number)) -gt 0 ]; then
+     echo "Yes, this positive number"
 
-echo "$((number+8))"
+    
+elif [ $((number)) -lt 0 ]; then
+    echo "Yes, this is negative number"
+
+else 
+    echo "Zero"
+
+
+fi
