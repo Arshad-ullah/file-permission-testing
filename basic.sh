@@ -21,9 +21,25 @@
 
 # echo "${greeting}s worlds"
 
-name=$1
+# name=$1
 
 
-echo "My name is $name and my father name is $2 ... $@"
+# echo "My name is $name and my father name is $2 ... $@"
+
+
+
+
+cd lib
+
+
+echo "===================directory..$(pwd)"
+
+touch test.txt
+rm -r test.txt
+
+
+echo "File removed"
+
+
 
 
