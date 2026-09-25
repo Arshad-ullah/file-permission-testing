@@ -33,21 +33,28 @@
 # fi
 
 
-correct_username="admin"
-correct_password="12345"
+# correct_username="admin"
+# correct_password="12345"
 
-read -p "Enter username " username
+# read -p "Enter username " username
 
-read -p "Enter password " password  
-
-
-if [ $username = $correct_username ] && [ $correct_password = $password ]; then
-
-    echo "Login successful "
-    echo "Welcome admin!"
-
-else 
-    echo "Please check your username and password"
+# read -p "Enter password " password  
 
 
-fi
+# if [ $username = $correct_username ] && [ $correct_password = $password ]; then
+
+#     echo "Login successful "
+#     echo "Welcome admin!"
+
+# else 
+#     echo "Invalid username or password"
+
+
+# fi
+
+read -p "Enter number " number
+
+
+value=$((number+32))
+
+echo "$((number+8))"
