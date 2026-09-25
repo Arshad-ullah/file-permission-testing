@@ -2,12 +2,32 @@
 
 # name, age, city
 
-read -p "Enter name " name
+# read -p "Enter name " name
+
+# read -p "Enter age " age
+
+# read -p "Enter city " city
+
+# echo "Hello $name"
+
+# echo "You are $age years old and you live in ${city}."
+
+
 
 read -p "Enter age " age
 
-read -p "Enter city " city
+if [ $age -lt 13 ]; then
 
-echo "Hello $name"
+    echo "You are a child"
+elif [ $age -ge 13 ] && [ $age -le 19 ]; then 
+    echo "You are a teenager"
 
-echo "You are $age years old and you live in ${city}."
+elif [ $age -ge 20 ] && [ $age -le 59 ]; then 
+    echo "You are an adult"
+
+    
+
+else 
+    echo "You are a senior citizen"
+
+fi
