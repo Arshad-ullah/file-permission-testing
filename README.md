@@ -14,3 +14,6 @@ read -p "message" (variable) to store init
 
 - array=("jahn" "kaleem")
 - to print one index "${array[0]}" if all then "${array[@]}", if length "${#array[@]}"
+
+1. slicing of array items let's want to print specific index values then it comes
+2. "${array[@]:start:length}"
