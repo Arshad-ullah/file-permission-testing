@@ -14,20 +14,40 @@
 
 
 
-read -p "Enter age " age
+# read -p "Enter age " age
 
-if [ $age -lt 13 ]; then
+# if [ $age -lt 13 ]; then
 
-    echo "You are a child"
-elif [ $age -ge 13 ] && [ $age -le 19 ]; then 
-    echo "You are a teenager"
+#     echo "You are a child"
+# elif [ $age -ge 13 ] && [ $age -le 19 ]; then 
+#     echo "You are a teenager"
 
-elif [ $age -ge 20 ] && [ $age -le 59 ]; then 
-    echo "You are an adult"
+# elif [ $age -ge 20 ] && [ $age -le 59 ]; then 
+#     echo "You are an adult"
 
     
 
+# else 
+#     echo "You are a senior citizen"
+
+# fi
+
+
+correct_username="admin"
+correct_password="12345"
+
+read -p "Enter username " username
+
+read -p "Enter password " password  
+
+
+if [ $username = $correct_username ] && [ $correct_password = $password ]; then
+
+    echo "Login successful "
+    echo "Welcome admin!"
+
 else 
-    echo "You are a senior citizen"
+    echo "Please check your username and password"
+
 
 fi
