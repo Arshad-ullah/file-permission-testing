@@ -17,3 +17,5 @@ read -p "message" (variable) to store init
 
 1. slicing of array items let's want to print specific index values then it comes
 2. "${array[@]:start:length}"
+
+# conditional statement
