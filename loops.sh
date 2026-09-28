@@ -9,8 +9,12 @@ users=("Arshad" "Khan" "Junaid" "Ikram")
 # done
 
 
-for ((a=1; a<=5; a++))
+for ((a=0; a<=20; a++))
 do
-    echo "Welcome to the team user$a"
-
+    if [ $((a%2)) -ne 0 ];
+    then
+        echo "$a"
+        
+    fi
+    
 done
