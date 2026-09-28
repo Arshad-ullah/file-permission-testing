@@ -13,9 +13,13 @@
 add() {
     sum=$(($1 + $2))
     # echo "$sum"
-    echo $sum
+    # echo $sum
+    return $sum
 }
+add 2 2
 
-d=$(add 2 2)
+res=$?
 
-echo "Testing...$d"
+
+
+echo "Testing...$res"
