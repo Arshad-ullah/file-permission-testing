@@ -16,7 +16,11 @@ marks=900
 if [ $marks -gt 900 ]; then
     echo "Top rated"
 
+elif 
+
 elif [ $marks -lt 500 ]; then
     echo "Fail"
 
 fi
+
+
