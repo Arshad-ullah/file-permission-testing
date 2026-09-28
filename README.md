@@ -25,3 +25,11 @@ read -p "message" (variable) to store init
     b: !=
     c: -z empty
     d: -n non empty
+
+
+# for loop
+
+- syntex "for user in list"
+- can use ranges {1..5}
+- can use ranges with increament .. {start,end,increament} {1..10..2}
+- Three-expression bash for loops syntax for((exp1; exp2; exp3))
