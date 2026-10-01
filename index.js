@@ -5,9 +5,9 @@ const app = express();
 const users = [
     {
         id: 1,
-        name: "Arshad Ullah",
-        email: "arshad@example.com",
-        phone: "+92 300 1234567",
+        name: "Arshad Ullah khan Gul test",
+        email: "arshad@example.com111dad",
+        phone: "+92 300 1234567 ",
         address: "Peshawar, Pakistan",
         age: 28
     },
