@@ -1,0 +1,30 @@
+{
+  "name": "dart_application_1",
+  "version": "1.0.0",
+  "description": "1: to read the all inputs of command line at once using $@ 2: if read one by one then $1 upto respective",
+  "homepage": "https://github.com/Arshad-ullah/file-permission-testing#readme",
+  "bugs": {
+    "url": "https://github.com/Arshad-ullah/file-permission-testing/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arshad-ullah/file-permission-testing.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "keywords": []
+}

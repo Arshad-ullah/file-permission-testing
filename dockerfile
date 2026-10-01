@@ -1,10 +1,9 @@
 FROM node:latest
-# WORKDIR /app
-COPY index.js /app/
 
+WORKDIR /app
 
-CMD ["node", "/app/index.js"]
+COPY index.js .
 
+EXPOSE 5000
 
-
-
+CMD ["node", "index.js"]
