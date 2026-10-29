@@ -6,7 +6,10 @@ password="admin123"
 read -p "Enter password " passd
 
 
-if [[ $passd == $password ]]; then
+if [[ ! -n $passd ]]; then
+    echo "String can not empty"
+
+elif [[ $passd == $password ]]; then
     echo "Login successfully!..$passd ...$password"
 
 else 
