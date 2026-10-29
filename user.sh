@@ -1,21 +1,38 @@
 #!/bin/bash
 
 
-password="admin123"
 
-read -p "Enter password " passd
+read -p "Enter filename: " fileName
 
 
-if [[ ! -n $passd ]]; then
-    echo "String can not empty"
 
-elif [[ $passd == $password ]]; then
-    echo "Login successfully!..$passd ...$password"
+if [[ ! -n $fileName ]]; then 
+    echo "Filename cannot be empty!"
+
+elif [[ -f $fileName ]]; then 
+    
+    echo "File exists!"
 
 else 
-    echo "Wrong password"
+    echo "File not found!"
+
 
 fi
+# password="admin123"
+
+# read -p "Enter password " passd
+
+
+# if [[ ! -n $passd ]]; then
+#     echo "String can not empty"
+
+# elif [[ $passd == $password ]]; then
+#     echo "Login successfully!..$passd ...$password"
+
+# else 
+#     echo "Wrong password"
+
+# fi
 
 # read -p "Enter number " number
 
