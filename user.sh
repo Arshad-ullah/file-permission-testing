@@ -1,9 +1,18 @@
 #!/bin/bash
 
 
+password="admin123"
+
+read -p "Enter password " passd
 
 
-cat README.md
+if [[ $passd == $password ]]; then
+    echo "Login successfully!..$passd ...$password"
+
+else 
+    echo "Wrong password"
+
+fi
 
 # read -p "Enter number " number
 
