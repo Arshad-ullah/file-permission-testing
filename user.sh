@@ -1,17 +1,22 @@
 #!/bin/bash
 
-read -p "Enter number " number
 
 
-if [[ $number == *[a-zA-Z]* ]]; then
-    echo "Please enter numbers only."
-elif (( number == 0 )); then
-    echo "Number is zero"
-elif (( number > 0 )); then
-    echo "Number is positive"
-else
-    echo "Number is negative"
-fi
+
+cat README.md
+
+# read -p "Enter number " number
+
+
+# if [[ $number == *[a-zA-Z]* ]]; then
+#     echo "Please enter numbers only."
+# elif (( number == 0 )); then
+#     echo "Number is zero"
+# elif (( number > 0 )); then
+#     echo "Number is positive"
+# else
+#     echo "Number is negative"
+# fi
 
 
 
