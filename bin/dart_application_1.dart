@@ -8,8 +8,8 @@ void main() {
 
 class Customer extends UseCase<Map<String, dynamic>, int> {
   @override
-  Map<String, dynamic> call(int params) {
-    return {"name": "Jahan", "age": 23};
+  Map<String, dynamic>? call(int? params) {
+    return null;
   }
 }
 

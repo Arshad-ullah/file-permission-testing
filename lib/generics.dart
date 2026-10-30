@@ -10,5 +10,5 @@
 // }
 
 abstract class UseCase<T, V> {
-  T call(V params);
+  T? call(V? params);
 }
