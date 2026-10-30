@@ -1,9 +1,35 @@
-import 'package:dart_application_1/user.dart';
-
 void main() {
-  User user = User(name: 'jahan', age: 23);
+  showData(ErrorState(false));
+}
 
-  User user1 = user;
+sealed class ApiState<T> {}
 
-  print(user1 == user);
+class SuccessState<T> extends ApiState<T> {
+  final T data;
+
+  SuccessState(this.data);
+}
+
+class ErrorState<T> extends ApiState<T> {
+  final T error;
+  ErrorState(this.error);
+}
+
+class Laoding<T> extends ApiState<T> {}
+
+void showData(ApiState state) {
+  switch (state) {
+    case Laoding():
+      print("loading state");
+      break;
+    case SuccessState():
+      print("Sucess: ${state.data}");
+
+      break;
+
+    case ErrorState():
+      print('Error state..${state.error}');
+
+      break;
+  }
 }

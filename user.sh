@@ -14,7 +14,7 @@ elif [[ -f $fileName ]]; then
     echo "File exists!"
 
 else 
-    echo "File not found!"
+    touch $fileName
 
 
 fi
