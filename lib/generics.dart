@@ -1,12 +1,14 @@
-// generics in dart is a way to write reusable,flexible code that work with diff data types
-// while maintaining it's type safety..
+// // generics in dart is a way to write reusable,flexible code that work with diff data types
+// // while maintaining it's type safety..
 
-class Box<T> {
-  T value;
+// class Box<T> {
+//   T value;
 
-  Box(this.value);
+//   Box(this.value);
 
-  T getValue() => value;
+//   T getValue() => value;
+// }
+
+abstract class UseCase<T, V> {
+  T call(V params);
 }
-
-

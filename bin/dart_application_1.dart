@@ -1,5 +1,16 @@
+import 'package:dart_application_1/generics.dart';
+
 void main() {
-  showData(ErrorState(false));
+  final data = Customer();
+
+  print(data.call(23));
+}
+
+class Customer extends UseCase<Map<String, dynamic>, int> {
+  @override
+  Map<String, dynamic> call(int params) {
+    return {"name": "Jahan", "age": 23};
+  }
 }
 
 sealed class ApiState<T> {}
